@@ -36,9 +36,6 @@ module.exports = {
         'home-tablet': "url('/images/home/background-home-tablet.jpg')",
         'home-desktop': "url('/images/home/background-home-desktop.jpg')",
       },
-      width: {
-        // mobile: '20.4375rem',
-      },
     },
   },
   plugins: [],
