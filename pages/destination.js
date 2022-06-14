@@ -5,6 +5,7 @@ import Image from 'next/image';
 // Components
 import Nav from '../components/Nav';
 import Paragraph from '../components/Paragraph';
+import PageTitle from '../components/PageTitle';
 
 // assets
 import DATA from '../data.json';
@@ -13,14 +14,16 @@ export default function Destination() {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const destinations = DATA.destinations;
+  const currentDestinationData = destinations[selectedIndex];
+
   const travelDetails = [
     {
       name: 'Avg. Distance',
-      value: destinations[selectedIndex].distance,
+      value: currentDestinationData.distance,
     },
     {
       name: 'Est. Travel Time',
-      value: destinations[selectedIndex].travel,
+      value: currentDestinationData.travel,
     },
   ];
 
@@ -64,18 +67,11 @@ export default function Destination() {
         <Nav />
 
         <main className="mx-auto flex w-[87%] max-w-md flex-col items-center justify-center py-7">
-          <div className="flex items-center gap-4">
-            <span className="font-barlow-condensed text-nav font-bold tracking-secondary text-tertiary opacity-50">
-              01
-            </span>
-            <span className="font-barlow-condensed text-nav uppercase tracking-tertiary text-tertiary">
-              Pick your destination
-            </span>
-          </div>
+          <PageTitle num="01" title="Pick your destination" />
 
           <div className="relative mt-8 w-1/2">
             <Image
-              src={destinations[selectedIndex].images.png}
+              src={currentDestinationData.images.png}
               alt="planet"
               width={200}
               height={200}
@@ -89,10 +85,10 @@ export default function Destination() {
             </div>
 
             <h1 className="mt-5 text-center font-bellefair text-heading-4 uppercase text-tertiary">
-              {destinations[selectedIndex].name}
+              {currentDestinationData.name}
             </h1>
 
-            <Paragraph>{destinations[selectedIndex].description}</Paragraph>
+            <Paragraph>{currentDestinationData.description}</Paragraph>
 
             <div className="my-8 h-[1px] w-full bg-quaternary"></div>
 

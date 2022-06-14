@@ -25,6 +25,7 @@ module.exports = {
         'heading-5': '1.75rem',
         'subheading-1': '1.75rem',
         'subheading-2': '0.875rem',
+        'subheading-3': '1.5rem',
         nav: '1rem',
       },
       letterSpacing: {
@@ -42,6 +43,9 @@ module.exports = {
           "url('/images/destination/background-destination-tablet.jpg')",
         'destination-desktop':
           "url('/images/destination/background-destination-desktop.jpg')",
+        'crew-mobile': "url('/images/crew/background-crew-mobile.jpg')",
+        'crew-tablet': "url('/images/crew/background-crew-tablet.jpg')",
+        'crew-desktop': "url('/images/crew/background-crew-desktop.jpg')",
       },
     },
   },
