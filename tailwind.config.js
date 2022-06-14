@@ -9,6 +9,7 @@ module.exports = {
         primary: '#0B0D17',
         secondary: '#D0D6F9',
         tertiary: '#ffffff',
+        quaternary: '#383B4B',
       },
       fontFamily: {
         barlow: ['Barlow', 'sans-serif'],
@@ -35,6 +36,12 @@ module.exports = {
         'home-mobile': "url('/images/home/background-home-mobile.jpg')",
         'home-tablet': "url('/images/home/background-home-tablet.jpg')",
         'home-desktop': "url('/images/home/background-home-desktop.jpg')",
+        'destination-mobile':
+          "url('/images/destination/background-destination-mobile.jpg')",
+        'destination-tablet':
+          "url('/images/destination/background-destination-tablet.jpg')",
+        'destination-desktop':
+          "url('/images/destination/background-destination-desktop.jpg')",
       },
     },
   },

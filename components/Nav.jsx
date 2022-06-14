@@ -11,7 +11,7 @@ export default function Nav() {
     <div className="flex justify-center">
       {isNavOpen && <NavList />}
 
-      <div className="w-11/12 max-w-xl">
+      <div className="w-[88%] max-w-xl">
         <div className="flex w-full items-center justify-between pt-6 ">
           <Link href="/" passHref>
             <Image
