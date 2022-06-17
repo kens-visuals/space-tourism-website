@@ -66,7 +66,7 @@ export default function Destination() {
       <div className="min-h-screen bg-destination-mobile bg-cover bg-no-repeat md:bg-destination-tablet lg:bg-destination-desktop">
         <Nav />
 
-        <main className="mx-auto flex w-[87%] max-w-md flex-col items-center justify-center py-7">
+        <main className="mx-auto flex w-[87%] max-w-xl flex-col items-center justify-center py-7">
           <PageTitle num="01" title="Pick your destination" />
 
           <div className="relative mt-8 w-1/2">
