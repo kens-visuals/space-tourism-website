@@ -16,12 +16,14 @@ export default function Home() {
         <Nav />
 
         <main className="flex justify-center">
-          <div className="mt-12 flex max-w-lg flex-col items-center justify-center gap-4 ">
-            <span className="text-center font-barlow-condensed text-base tracking-primary text-secondary">
+          <div className="mt-12 flex max-w-lg flex-col items-center justify-center gap-4 md:mt-28">
+            <span className="text-center font-barlow-condensed text-base tracking-primary text-secondary md:text-lg">
               SO, YOU WANT TO TRAVEL TO
             </span>
-            <h1 className="text-heading-2 uppercase text-tertiary">Space</h1>
-            <p className="px-6 text-center font-barlow text-paragraph text-secondary">
+            <h1 className="text-heading-2 uppercase text-tertiary md:text-heading-1">
+              Space
+            </h1>
+            <p className="px-6 text-center font-barlow text-paragraph text-secondary md:px-9 md:text-base md:leading-7">
               Let’s face it; if you want to go to space, you might as well
               genuinely go to outer space and not hover kind of on the edge of
               it. Well sit back, and relax because we’ll give you a truly out of
@@ -31,7 +33,7 @@ export default function Home() {
             <Link href="/destination" passHref>
               <button
                 type="button"
-                className="mt-20 h-[9.375rem] w-[9.375rem] justify-self-end rounded-full bg-tertiary text-xl uppercase tracking-tertiary transition-all duration-300 hover:shadow-[0px_0px_0px_50px_rgba(255,255,255,0.1)]"
+                className="mt-20 h-[9.375rem] w-[9.375rem] justify-self-end rounded-full bg-tertiary text-xl uppercase tracking-tertiary transition-all duration-300 hover:shadow-[0px_0px_0px_50px_rgba(255,255,255,0.1)] md:mt-36 md:h-60 md:w-60 md:text-4xl"
               >
                 Explore
               </button>
