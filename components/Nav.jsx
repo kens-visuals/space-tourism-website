@@ -5,24 +5,17 @@ import Image from 'next/image';
 // components
 import NavList from './NavList';
 
-// hooks
-import useWindowSize from '../hooks/useWindowSize';
-
 export default function Nav() {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const { windowDimension } = useWindowSize();
-
-  console.log(windowDimension);
 
   return (
     <div className="flex justify-center">
-      {isNavOpen && <NavList />}
-      {windowDimension.winWidth >= 768 && <NavList />}
+      <div className="md:hidden">{isNavOpen && <NavList />}</div>
 
-      <div className="w-[88%] max-w-3xl">
-        <div className="flex w-full items-center justify-between pt-6 ">
+      <div className="w-[88%] max-w-3xl md:flex md:w-full md:max-w-none md:items-center">
+        <div className="flex w-full items-center justify-between pt-6 md:p-0 ">
           <Link href="/" passHref>
-            <div className="relative w-9 cursor-pointer md:w-12">
+            <div className="relative w-9 cursor-pointer md:ml-10 md:w-12">
               <Image
                 src="/images/shared/logo.svg"
                 alt="Space Tourism"
@@ -56,6 +49,10 @@ export default function Nav() {
               />
             </div>
           )}
+        </div>
+
+        <div className="hidden md:inline-block ">
+          <NavList />
         </div>
       </div>
     </div>
