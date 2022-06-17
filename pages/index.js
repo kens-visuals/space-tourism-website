@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="min-h-screen bg-home-mobile bg-cover bg-no-repeat md:bg-home-tablet lg:bg-home-desktop">
+      <div className="relative min-h-screen w-screen bg-home-mobile bg-cover bg-no-repeat md:bg-home-tablet lg:bg-home-desktop">
         <Nav />
 
         <main className="flex justify-center">
